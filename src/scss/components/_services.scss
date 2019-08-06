@@ -1,0 +1,69 @@
+.services {
+
+    .const-col {
+      height: 565px;
+    }
+
+    background-color: #70bfff;
+    .custom-header {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      text-align: center;
+      width: 90%;
+    }
+
+    &__accordion {
+      width: 80%;
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__card {
+      border: 0;
+      margin-bottom: 20px;
+      border-radius: 0;
+    }
+    
+    &__link {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: space-around;
+      padding: 20px 0;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 25%;
+        height: 100%;
+        width: 1px;
+        background-color: $dark-font-color;
+      }
+        p {
+          width: 60%;
+          margin: 0;
+          color: $dark-font-color;
+          font-size: 17px;
+          font-weight: 700;
+          text-align: center;
+        }
+        &:hover, &:hover p, &:focus, &:focus p {
+          text-decoration: none;
+          color: #000000;
+        }
+        &:hover, &:focus {
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.8);
+        }
+    }
+  }
+
+  @include respond-to(to-lg) {
+    .services {
+      &__accordion {
+        width: 100%;
+      }
+    }
+  }

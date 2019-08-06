@@ -1,0 +1,43 @@
+.subscribe {
+    height: 500px;
+    padding-top: 8rem;
+    background: url('../img/bg_subscribe.jpg') no-repeat;
+    background-position: bottom right;
+    background-size: auto;
+    position: relative;
+
+    .custom-header {
+      font-size: 40px; 
+    }
+
+    &__input {
+      height: 53px;
+      border: 1px solid $dark-font-color;
+      border-radius: 0;
+    }
+
+    .btn-main {
+      background-color: #96B92C;
+      color: $light-font-color;
+      &:hover {
+        background-color: darken(#96B92C, $btn-darken);
+      }
+    }
+  }
+
+  @include respond-to(md) {
+    .subscribe{
+      background-position:bottom center;
+      background-size:contain;
+      padding:2rem 5% 16rem 5%;
+    }
+  }
+  
+  @include respond-to(only-md) {
+    .subscribe{
+      background-position:bottom center;
+      background-size:contain;
+      padding:4rem 5% 25rem 5%;
+    }
+  }
+  

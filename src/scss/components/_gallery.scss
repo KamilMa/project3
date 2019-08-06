@@ -1,0 +1,28 @@
+.gallery {
+    background-color: #ffe92f;
+
+    &__img {
+      margin-bottom: 25px;
+      padding: 0;
+      box-shadow: 0 2px 10px 0 rgba(50, 50, 50, .5);
+    }
+
+    &__showMore {
+      display: none;
+    }
+    
+    .btn-main {
+      background-color: #5585a2;
+      color: $light-font-color;
+      &:hover {
+        background-color: darken(#5585a2, $btn-darken);
+      }
+    }
+  }
+
+  @include respond-to(to-lg) {
+    .gallery img {
+      margin: 0 auto; 
+      margin-top: 25px;
+    }
+  }

@@ -1,0 +1,20 @@
+
+/* custom variables */
+@import "utils/variables";
+@import "utils/mixins";
+
+/* bootstrap 4 */
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/* base */
+@import "base/base";
+
+/* components */
+@import "components/home";
+@import "components/about";
+@import "components/services";
+@import "components/gallery";
+@import "components/subscribe";
+@import "components/blog";
+@import "components/contact";
+@import "components/footer";
